@@ -14,7 +14,7 @@ gra6 = [[0, 0, 0], [0, 0, 0], [1, 1, 1]]
 gra7 = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 gra8 = [[0, 0, 1], [0, 1, 0], [1, 0, 0]]
 
-def showTab():
+def showTab():      #show whole tab with results
     for i in tab:
         print(i)
 
@@ -28,6 +28,7 @@ while (check):
     tab[int(graczX[0])][int(graczX[1])] = 1
     showTab()
     max = max + 1
+    #checking option for winner 1
     if ((tab1[0][0] == gra1[0][0] and tab1[1][0] == gra1[1][0] and tab1[2][0] == gra1[2][0]) or
         (tab1[0][1] == gra2[0][1] and tab1[1][1] == gra2[1][1] and tab1[2][1] == gra2[2][1]) or
         (tab1[0][2] == gra3[0][2] and tab1[1][2] == gra3[1][2] and tab1[2][2] == gra3[2][2]) or
@@ -48,6 +49,7 @@ while (check):
     tab[int(graczY[0])][int(graczY[1])] = 2
     showTab()
     max = max + 1
+    #checking option for winner 2
     if ((tab2[0][0] == gra1[0][0] and tab2[1][0] == gra1[1][0] and tab2[2][0] == gra1[2][0]) or
         (tab2[0][1] == gra2[0][1] and tab2[1][1] == gra2[1][1] and tab2[2][1] == gra2[2][1]) or
         (tab2[0][2] == gra3[0][2] and tab2[1][2] == gra3[1][2] and tab2[2][2] == gra3[2][2]) or
